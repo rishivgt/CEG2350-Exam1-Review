@@ -16,27 +16,9 @@ b) bash
 c) PowerShell  
 d) sh  
 
-**Q3: Which of the following is a key feature of the `bash` shell?**  
-a) It is exclusive to Windows  
-b) It only supports interactive commands  
-c) It supports scripting and automation  
-d) It can only run on MacOS  
-
-**Q4: What does the `sh` command invoke?**  
-a) A specific type of script  
-b) The default shell for Linux systems  
-c) The system's security  
-d) A specific file editor  
-
 ---
 
 ## 2. SSH (Secure Shell):
-
-**Q5: What does SSH stand for?**  
-a) Secure Server Handler  
-b) Secure Shell  
-c) Secure Socket Handler  
-d) Shell Secure Handler  
 
 **Q6: What is the primary use of SSH?**  
 a) To browse the internet securely  
@@ -45,22 +27,17 @@ c) To copy files between systems
 d) To back up system files  
 
 **Q7: What is the command to establish an SSH connection to a server?**  
-a) ssh connect  
-b) ssh <username>@<hostname>  
+a) ssh 192.168.0.0@ubuntu 
+b) ssh ubuntu@192.168.0.0
 c) ssh-server  
-d) connect ssh  
+d) connect ssh ubuntu@192.168.0.0
 
 **Q8: Which of the following is a requirement for SSH authentication?**  
 a) Password encryption  
 b) Public and private key pairs  
-c) Username and domain name  
-d) Static IP address  
+c) Username and domain name 
+d) Static IP address
 
-**Q9: What is stored in the `authorized_keys` file in SSH?**  
-a) Server IP addresses  
-b) Public key data for users that are authorized to connect  
-c) User credentials  
-d) Encrypted passwords  
 
 ---
 
@@ -96,21 +73,9 @@ b) cp
 c) cat  
 d) ln  
 
-**Q15: What is the main difference between files and directories in an operating system?**  
-a) Files store data, while directories store files  
-b) Directories store data, while files store data  
-c) Files cannot contain other files, but directories can  
-d) There is no difference  
-
 ---
 
 ## 4. Scripting:
-
-**Q16: How can you run a bash script from the current directory without specifying the interpreter?**  
-a) ./script.sh  
-b) bash script.sh  
-c) source script.sh  
-d) run script.sh  
 
 **Q17: What does the `echo` command do in bash scripting?**  
 a) Prints a message to the console  
@@ -130,12 +95,6 @@ b) get
 c) input  
 d) prompt  
 
-**Q20: What symbol in bash scripting is used for logical negation?**  
-a) !  
-b) ~  
-c) &  
-d) |  
-
 **Q21: Which loop in bash will execute a block of code until a condition is met?**  
 a) for loop  
 b) while loop  
@@ -146,17 +105,11 @@ d) repeat loop
 
 ## 5. Git (Version Control):
 
-**Q22: What command initializes a new git repository?**  
-a) git start  
-b) git init  
-c) git create  
-d) git new  
-
 **Q23: What does the `git commit -m "message"` command do?**  
 a) Stages changes for commit  
 b) Commits staged changes with a descriptive message  
 c) Pushes committed changes to a remote repository  
-d) Creates a new branch  
+d) Creates a new branch 
 
 **Q24: What command is used to check the status of a Git repository?**  
 a) git status  
@@ -178,7 +131,7 @@ d) git merge
 
 **Q27: What does the `git clone` command do?**  
 a) Creates a new branch  
-b) Downloads a remote repository  
+b) Downloads a remote repository
 c) Commits changes to the repository  
 d) Adds files to the repository  
 
@@ -211,37 +164,3 @@ c) Copies a file
 d) Deletes a file  
 
 ---
-
-## Answer Key:
-
-1. b) bash  
-2. c) PowerShell  
-3. c) It supports scripting and automation  
-4. b) The default shell for Linux systems  
-5. b) Public and private key pairs  
-6. b) To establish a secure, encrypted connection to remote systems  
-7. b) ssh <username>@<hostname>  
-8. b) Public and private key pairs  
-9. b) Public key data for users that are authorized to connect  
-10. a) ls  
-11. a) mkdir  
-12. c) rmdir  
-13. a) rm  
-14. b) cp  
-15. a) Files store data, while directories store files  
-16. a) ./script.sh  
-17. a) Prints a message to the console  
-18. a) test -e file  
-19. a) read  
-20. a) !  
-21. c) until loop  
-22. b) git init  
-23. b) Commits staged changes with a descriptive message  
-24. a) git status  
-25. a) Downloads and merges changes from a remote repository  
-26. c) git add  
-27. b) Downloads a remote repository  
-28. b) .sh  
-29. b) Changes the permissions of a file  
-30. a) chmod +x script.sh  
-31. b) Displays the content of a file  
