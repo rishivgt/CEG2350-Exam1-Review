@@ -170,38 +170,25 @@ d) Deletes a file
 **Use the `employees.csv` file located in this repo for the next questions.**
 
 
-**grep Questions:**
+### `grep` Questions:
+1. Find all employees in the "Engineering" department.
+2. Display lines containing "HR" employees.
+3. Find employees whose name contains "John".
+4. Show lines with a salary greater than 70000 (you may need to refine this after `grep` using `awk`).
+5. Search for employees who joined in the year 2019.
 
-    Find all employees in the "Engineering" department.
+### `sed` Questions:
+6. Replace "HR" with "Human Resources" in the dataset.
+7. Remove the "Marketing" department from the dataset.
+8. Add a "USD" suffix to all salary values.
+9. Swap the "Name" and "Department" columns (assume a simple text transformation).
+10. Remove the header row from the file.
 
-    Display lines containing "HR" employees.
+### `awk` Questions:
+11. Print only the names of the employees.
+12. Show the name and salary of employees from the "Engineering" department.
+13. Calculate and print the average salary of all employees.
+14. Find the highest salary in the dataset.
+15. Print the names of employees who joined after 2020.
 
-    Find employees whose name contains "John".
-
-    Show lines with a salary greater than 70000 (you may need to refine this after grep using awk).
-
-    Search for employees who joined in the year 2019.
-
-**sed Questions:**
-
-    Replace "HR" with "Human Resources" in the dataset.
-
-    Remove the "Marketing" department from the dataset.
-
-    Add a "USD" suffix to all salary values.
-
-    Swap the "Name" and "Department" columns (assume a simple text transformation).
-
-    Remove the header row from the file.
-
-**awk Questions:**
-
-    Print only the names of the employees.
-
-    Show the name and salary of employees from the "Engineering" department.
-
-    Calculate and print the average salary of all employees.
-
-    Find the highest salary in the dataset.
-
-    Print the names of employees who joined after 2020.
+---
