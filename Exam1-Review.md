@@ -164,3 +164,44 @@ c) Copies a file
 d) Deletes a file  
 
 ---
+**Questions on `grep`, `sed` and `awk` are here to get you comfortable before the exam.**
+**Feel free to use past notes or `man` pages on your terminal!!**
+
+**Use the `employees.csv` file located in this repo for the next questions.**
+
+
+**grep Questions:**
+
+    Find all employees in the "Engineering" department.
+
+    Display lines containing "HR" employees.
+
+    Find employees whose name contains "John".
+
+    Show lines with a salary greater than 70000 (you may need to refine this after grep using awk).
+
+    Search for employees who joined in the year 2019.
+
+**sed Questions:**
+
+    Replace "HR" with "Human Resources" in the dataset.
+
+    Remove the "Marketing" department from the dataset.
+
+    Add a "USD" suffix to all salary values.
+
+    Swap the "Name" and "Department" columns (assume a simple text transformation).
+
+    Remove the header row from the file.
+
+**awk Questions:**
+
+    Print only the names of the employees.
+
+    Show the name and salary of employees from the "Engineering" department.
+
+    Calculate and print the average salary of all employees.
+
+    Find the highest salary in the dataset.
+
+    Print the names of employees who joined after 2020.
