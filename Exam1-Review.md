@@ -164,7 +164,9 @@ c) Copies a file
 d) Deletes a file  
 
 ---
-**Questions on `grep`, `sed` and `awk` are here to get you comfortable before the exam.**
+
+
+## Questions on `grep`, `sed` and `awk` are here to get you comfortable before the exam.
 **Feel free to use past notes or `man` pages on your terminal!!**
 
 **Use the `employees.csv` file located in this repo for the next questions.**
