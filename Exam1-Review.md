@@ -4,7 +4,7 @@
 
 ## 1. Shells:
 
-**Q1: Which of the following is a shell used on your Ubunutu machine?**  
+**Q1: Which of the following is a shell used on your Ubuntu machine?**  
 a) PowerShell  
 b) bash  
 c) cmd  
