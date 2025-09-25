@@ -1,6 +1,3 @@
-# Multiple Choice Quiz on Shells, SSH, Files, Scripting, and Git
-
----
 
 ## 1. Shells:
 
@@ -42,6 +39,13 @@ d) Static IP address
 ---
 
 ## 3. Files, Directories, and OS Structure:
+
+**Question 3:** What does the command `ls ../..` do?
+
+- a) Lists files in the current directory
+- b) Lists files two directories up from current location
+- c) Lists hidden files in parent directory
+- d) Creates a new directory
 
 **Q10: What command is used to list files and directories in Linux?**  
 a) ls  
@@ -135,6 +139,12 @@ b) Downloads a remote repository
 c) Commits changes to the repository  
 d) Adds files to the repository  
 
+**Question 2: You're trying to push changes to GitHub but get an error saying "Updates were rejected because the remote contains work that you do not have locally." What should you do first?**
+
+- a) `git push --force`
+- b) `git pull`
+- c) `git reset --hard`
+- d) `git commit -m "fix"`
 ---
 
 ## 6. Additional Questions:
@@ -163,8 +173,155 @@ b) Displays the content of a file
 c) Copies a file  
 d) Deletes a file  
 
+
+Question 7: Given this SSH config entry:
+```
+Host server1
+    HostName 192.168.1.100
+    User admin
+    IdentityFile ~/.ssh/server_key
+```
+
+What SSH command would use this config file break down to?
+
+- a) `ssh admin@192.168.1.100`
+- b) `ssh -i ~/.ssh/server_key admin@192.168.1.100`
+- c) `ssh ~/.ssh/server_key 192.168.1.100@admin `
+- d) `ssh 192.168.1.100`
+
+**Question 8:** In the above SSH config, what is the username on the remote system?
+
+- a) server1 
+- b) admin
+- c) 192.168.1.100
+- d) server_key
 ---
 
+## Text Processing
+
+**Question 9:** You need to replace all occurrences of "oldserver" with "newserver" in a file called hosts.txt. Which sed command is correct?
+
+- a) `sed 's/oldserver/newserver/' hosts.txt`
+- b) `sed 's/oldserver/newserver/g' hosts.txt`
+- c) `sed 'g/oldserver/newserver/' hosts.txt`
+- d) `sed 'oldserver/newserver/g' hosts.txt`
+
+**Question 10:** Given this data:
+
+```
+Alice Johnson red pizza
+Bob Wilson blue burger
+Carol Davis green salad
+```
+
+Which awk command prints the favorite food of people whose first name contains 'o'?
+
+- a) `awk '$1 ~ /o/ {print $4}' data`
+- b) `awk '$1 = /o/ {print $4}' data`
+- c) `awk '/o/ {print $4}' data`
+- d) `awk '$0 ~ /o/ {print $1}' data`
+
+## Regular Expressions
+
+**Question 11:** Which grep command will match lines containing either "cat" or "dog" (exact words)?
+
+- a) `grep "cat|dog" file.txt`
+- b) `grep -E "(cat|dog)" file.txt`
+- c) `grep -v "(cat|dog)" file.txt`
+- d) `grep "(cat|dog)" > file.txt`
+
+**Question 12:** Given the regex pattern: `^[Tt]est\s\$[0-9]{2,3}$`
+
+Which string will match this pattern?
+
+- a) `Test $25`
+- b) `test $5`
+- c) `Testing $100`
+- d) `test$25`
+
+**Question 13:** Which regex matches files ending in .txt only?
+
+- a) `.txt`
+- b) `\.txt`
+- c) `\.txt$`
+- d) `txt$`
+
+## File Permissions
+
+**Question 14:** What permissions does `chmod 755 script.sh` set?
+
+- a) user: rwx, group: r-x, other: r-x
+- b) user: rw-, group: r--, other: r--
+- c) user: r-x, group: rwx, other: r-x
+- d) user: rwx, group: rwx, other: rwx
+
+**Question 15:** A file has permissions `-rw-r--r--` and is owned by user "john" in group "staff". Can user "mary" (who is in group "staff") edit this file?
+
+- a) Yes
+- b) No
+
+## User Management
+
+**Question 16:** Which command adds user "alice" to the group "developers"?
+
+- a) `usermod -a -G developers alice`
+- b) `usermod -a -G alice developers`
+- c) `adduser alice developers`
+- d) `chgrp developers alice`
+
+**Question 17:** A script has permissions `-rw-r--r--`. Can you execute it with `./script.sh`?
+
+- a) Yes
+- b) No
+
+## Shell Scripting
+
+**Question 18:** Which script correctly checks if a file exists before reading it?
+
+- a) 
+```bash
+if [[ -f $filename ]]; then
+    cat $filename
+fi
+```
+
+- b)
+```bash
+if [[ -d $filename ]]; then
+    cat $filename
+fi
+```
+
+- c)
+```bash
+if [[ -e $filename ]]; then
+    cat $filename
+fi
+```
+
+- d) Both a and c are correct
+
+**Question 19:** You have a script that uses getopts with options "-h" for help, "-f" for filename, and "-n" for number. Write a command that would call this script to set filename to "data.txt" and number to "42":
+
+**Answer:** ________________________________
+
+## Git Operations
+
+**Question 20:** You have modified a file called "main.java" in your git repository. The output of `git status` shows:
+
+```
+Changes not staged for commit:
+  modified: main.java
+```
+
+What commands do you need to commit and push this change?
+
+- a) `git add main.java; git commit -m "update"; git push`
+- b) `git commit main.java; git push`
+- c) `git add .; git push`
+- d) `git commit -a; git push`
+
+---
 
 ## Questions on `grep`, `sed` and `awk` are here to get you comfortable before the exam.
 **Feel free to use past notes or `man` pages on your terminal!!**
