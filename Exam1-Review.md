@@ -6,8 +6,8 @@
 - Your terminal and AWS instance
 - Notes you've taken so far
 - Regex links that are provided
-- [https://www.datacamp.com/cheat-sheet/regular-expresso](https://www.datacamp.com/cheat-sheet/regular-expresso)
-and [https://regex101.com/](https://regex101.com)
+- [Data Camp Cheat Sheet](https://www.datacamp.com/cheat-sheet/regular-expresso)
+and [Regex 101](https://regex101.com)
 - Lab work in your course repository
 
 **Important Note:**
