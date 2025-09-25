@@ -1,9 +1,19 @@
 # CEG 2350 Midterm 1 Review 
 
-# As always, your terminal, AWS instance, notes you've taken so far, regex links that are provided,
-# and Lab work in your course repo are fair game. Questions are not meant to be an exact replica of the exam 
-# you will take, but some to check your understanding so far, and to test if you can use resources to get to the 
-# correct answer. 
+## Instructions
+
+**Resources Available:**
+- Your terminal and AWS instance
+- Notes you've taken so far
+- Regex links that are provided
+- Lab work in your course repository
+
+**Important Note:**
+These questions are designed to check your understanding and test your ability to use available resources to find correct answers. They are not meant to be an exact replica of the exam you will take, but rather practice questions to reinforce your learning.
+
+Good luck, and may the curve ever be in your favor. 
+
+(There isn't a curve, so just good luck 😉)
 
 ## 1. Shells
 
