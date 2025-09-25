@@ -85,12 +85,6 @@ Good luck, and may the curve ever be in your favor.
 - c) To copy files between systems  
 - d) To back up system files  
 
-**Q11: What is the command to establish an SSH connection to a server?**
-- a) ssh 192.168.0.0@ubuntu 
-- b) ssh ubuntu@192.168.0.0
-- c) ssh-server  
-- d) connect ssh ubuntu@192.168.0.0
-
 **Q12: Which of the following is a requirement for SSH authentication?**
 - a) Password encryption  
 - b) Public and private key pairs  
@@ -137,12 +131,6 @@ Host server1
 - b) get  
 - c) input  
 - d) prompt  
-
-**Q18: Which loop in bash will execute a block of code until a condition is met?**
-- a) for loop  
-- b) while loop  
-- c) until loop  
-- d) repeat loop  
 
 **Q19: What is the default file extension for bash scripts?**
 - a) .txt  
