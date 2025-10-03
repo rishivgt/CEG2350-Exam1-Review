@@ -73,7 +73,7 @@ Good luck, and may the curve ever be in your favor.
 
 **Q9: What does the `cat` command do in Linux?**
 - a) Creates a new file  
-- b) Displays the content of a file  
+- b) Displays the content of a file <-
 - c) Copies a file  
 - d) Deletes a file  
 
@@ -83,7 +83,7 @@ Good luck, and may the curve ever be in your favor.
 
 **Q10: What is the primary use of SSH?**
 - a) To browse the internet securely  
-- b) To establish a secure, encrypted connection to remote systems  
+- b) To establish a secure, encrypted connection to remote systems  <-
 - c) To copy files between systems  
 - d) To back up system files  
 
