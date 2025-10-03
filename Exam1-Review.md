@@ -21,14 +21,14 @@ Good luck, and may the curve ever be in your favor.
 
 **Q1: Which of the following is a shell used on your Ubuntu machine?**
 - a) PowerShell  
-- b) bash  
+- b) bash <- 
 - c) cmd  
 - d) Z shell  
 
 **Q2: Which shell is commonly used in Windows for command-line operations?**
 - a) zsh  
 - b) bash  
-- c) PowerShell  
+- c) PowerShell <- 
 - d) sh  
 
 ---
@@ -37,18 +37,18 @@ Good luck, and may the curve ever be in your favor.
 
 **Q3: What does the command `ls ../..` do?**
 - a) Lists files in the current directory
-- b) Lists files two directories up from current location
+- b) Lists files two directories up from current location<-
 - c) Lists hidden files in parent directory
 - d) Creates a new directory
 
 **Q4: What command is used to list files and directories in Linux?**
-- a) ls  
+- a) ls  <-
 - b) dir  
 - c) list  
 - d) show  
 
 **Q5: What command creates a new directory in Linux?**
-- a) mkdir  
+- a) mkdir  <-
 - b) mkdir -new  
 - c) touch  
 - d) newdir  
@@ -56,18 +56,18 @@ Good luck, and may the curve ever be in your favor.
 **Q6: What command is used to remove a directory in Linux?**
 - a) rm  
 - b) del  
-- c) rmdir  
+- c) rmdir <- 
 - d) delete  
 
 **Q7: What command is used to remove a file in Linux?**
-- a) rm  
+- a) rm<- 
 - b) erase  
 - c) del  
 - d) remove  
 
 **Q8: Which command in Linux is used to copy files?**
 - a) mv  
-- b) cp  
+- b) cp<-  
 - c) cat  
 - d) ln  
 
