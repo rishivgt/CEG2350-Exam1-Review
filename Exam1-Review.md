@@ -89,7 +89,7 @@ Good luck, and may the curve ever be in your favor.
 
 **Q12: Which of the following is a requirement for SSH authentication?**
 - a) Password encryption  
-- b) Public and private key pairs  
+- b) Public and private key pairs  <-
 - c) Username and domain name 
 - d) Static IP address
 
@@ -102,13 +102,13 @@ Host server1
 ```
 **What SSH command would use this config file break down to?**
 - a) `ssh admin@192.168.1.100`
-- b) `ssh -i ~/.ssh/server_key admin@192.168.1.100`
+- b) `ssh -i ~/.ssh/server_key admin@192.168.1.100`<-
 - c) `ssh ~/.ssh/server_key 192.168.1.100@admin`
 - d) `ssh 192.168.1.100`
 
 **Q14: In the above SSH config, what is the username on the remote system?**
 - a) server1 
-- b) admin
+- b) admin<-
 - c) 192.168.1.100
 - d) server_key
 
@@ -117,31 +117,31 @@ Host server1
 ## 4. Scripting
 
 **Q15: What does the `echo` command do in bash scripting?**
-- a) Prints a message to the console  
+- a) Prints a message to the console  <-
 - b) Executes a command  
 - c) Reads a file  
 - d) Creates a new file  
 
 **Q16: What bash command is used to check if a file exists?**
-- a) test -e file  
+- a) test -e file  <-
 - b) check file  
 - c) file exists  
 - d) if file -exists  
 
 **Q17: Which of the following is used to read user input in a bash script?**
-- a) read  
+- a) read  <-
 - b) get  
 - c) input  
 - d) prompt  
 
 **Q19: What is the default file extension for bash scripts?**
 - a) .txt  
-- b) .sh  
+- b) .sh <- 
 - c) .bash  
 - d) .bashscript  
 
 **Q20: How can you make a bash script executable?**
-- a) chmod +x script.sh  
+- a) chmod +x script.sh <- 
 - b) bash script.sh  
 - c) make script.sh executable  
 - d) execute script.sh  
@@ -165,11 +165,11 @@ if [[ -e $filename ]]; then
     cat $filename
 fi
 ```
-- d) Both a and c are correct
+- d) Both a and c are correct<-
 
 **Q22: You have a script that uses getopts with options "-h" for help, "-f" for filename, and "-n" for number. Write a command that would call this script to set filename to "data.txt" and number to "42":**
 
-**Answer:** ________________________________
+**Answer:** ________./script.sh -f data.txt -n 42________________________
 
 ---
 
@@ -177,30 +177,30 @@ fi
 
 **Q23: What does the `chmod` command do in Linux?**
 - a) Changes the ownership of a file  
-- b) Changes the permissions of a file  
+- >b) Changes the permissions of a file  
 - c) Moves a file to a new directory  
 - d) Renames a file  
 
 **Q24: What permissions does `chmod 755 script.sh` set?**
-- a) user: rwx, group: r-x, other: r-x
+- >a) user: rwx, group: r-x, other: r-x
 - b) user: rw-, group: r--, other: r--
 - c) user: r-x, group: rwx, other: r-x
 - d) user: rwx, group: rwx, other: rwx
 
 **Q25: A file has permissions `-rw-r--r--` and is owned by user "john" in group "staff". Can user "mary" (who is in group "staff") edit this file?**
 - a) Yes
-- b) No
+- b) No<-
 
 **Q26: A script has permissions `-rw-r--r--`. Can you execute it with `./script.sh`?**
 - a) Yes
-- b) No
+- b) No<-
 
 ---
 
 ## 6. User Management
 
 **Q27: Which command adds user "alice" to the group "developers"?**
-- a) `usermod -a -G developers alice`
+- a) `usermod -a -G developers alice`<-
 - b) `usermod -a -G alice developers`
 - c) `adduser alice developers`
 - d) `chgrp developers alice`
@@ -211,7 +211,7 @@ fi
 
 **Q28: You need to replace all occurrences of "oldserver" with "newserver" in a file called hosts.txt. Which sed command is correct?**
 - a) `sed 's/oldserver/newserver/' hosts.txt`
-- b) `sed 's/oldserver/newserver/g' hosts.txt`
+- b) `sed 's/oldserver/newserver/g' hosts.txt`<-
 - c) `sed 'g/oldserver/newserver/' hosts.txt`
 - d) `sed 'oldserver/newserver/g' hosts.txt`
 
@@ -222,7 +222,7 @@ Bob Wilson blue burger
 Carol Davis green salad
 ```
 **Which awk command prints the favorite food of people whose first name contains 'o'?**
-- a) `awk '$1 ~ /o/ {print $4}' data`
+- a) `awk '$1 ~ /o/ {print $4}' data`<-
 - b) `awk '$1 = /o/ {print $4}' data`
 - c) `awk '/o/ {print $4}' data`
 - d) `awk '$0 ~ /o/ {print $1}' data`
@@ -233,13 +233,13 @@ Carol Davis green salad
 
 **Q30: Which grep command will match lines containing either "cat" or "dog" (exact words)?**
 - a) `grep "cat|dog" file.txt`
-- b) `grep -E "(cat|dog)" file.txt`
+- b) `grep -E "(cat|dog)" file.txt`<-
 - c) `grep -v "(cat|dog)" file.txt`
 - d) `grep "(cat|dog)" > file.txt`
 
 **Q31: Given the regex pattern: `^[Tt]est\s\$[0-9]{2,3}$`**
 **Which string will match this pattern?**
-- a) `Test $25`
+- a) `Test $25`<-
 - b) `test $5`
 - c) `Testing $100`
 - d) `test$25`
@@ -247,7 +247,7 @@ Carol Davis green salad
 **Q32: Which regex matches files ending in .txt only?**
 - a) `.txt`
 - b) `\.txt`
-- c) `\.txt$`
+- c) `\.txt$`<-
 - d) `txt$`
 
 ---
@@ -256,18 +256,18 @@ Carol Davis green salad
 
 **Q33: What does the `git commit -m "message"` command do?**
 - a) Stages changes for commit  
-- b) Commits staged changes with a descriptive message  
+- b) Commits staged changes with a descriptive message<-  
 - c) Pushes committed changes to a remote repository  
 - d) Creates a new branch 
 
 **Q34: What command is used to check the status of a Git repository?**
-- a) git status  
+- a) git status<-  
 - b) git check  
 - c) git info  
 - d) git logs  
 
 **Q35: What does the `git pull` command do?**
-- a) Downloads and merges changes from a remote repository  
+- a) Downloads and merges changes from a remote repository  <-
 - b) Creates a new commit  
 - c) Uploads local changes to the remote repository  
 - d) Clones a remote repository  
@@ -275,18 +275,18 @@ Carol Davis green salad
 **Q36: Which command would you use to stage files for commit in Git?**
 - a) git push  
 - b) git stage  
-- c) git add  
+- c) git add <- 
 - d) git merge  
 
 **Q37: What does the `git clone` command do?**
 - a) Creates a new branch  
-- b) Downloads a remote repository
+- b) Downloads a remote repository<-
 - c) Commits changes to the repository  
 - d) Adds files to the repository  
 
 **Q38: You're trying to push changes to GitHub but get an error saying "Updates were rejected because the remote contains work that you do not have locally." What should you do first?**
 - a) `git push --force`
-- b) `git pull`
+- b) `git pull`<-
 - c) `git reset --hard`
 - d) `git commit -m "fix"`
 
@@ -296,7 +296,7 @@ Changes not staged for commit:
   modified: main.java
 ```
 **What commands do you need to commit and push this change?**
-- a) `git add main.java; git commit -m "update"; git push`
+- a) `git add main.java; git commit -m "update"; git push`<-
 - b) `git commit main.java; git push`
 - c) `git add .; git push`
 - d) `git commit -a; git push`
@@ -309,15 +309,15 @@ Changes not staged for commit:
 
 ### `grep` Questions:
 **Q40:** Find all employees in the "Engineering" department.
-
+grep Engineering employees.csv 
 **Q41:** Display lines containing "HR" employees.
-
+grep HR employees.csv
 **Q42:** Find employees whose name contains "John".
-
+grep John employees.csv
 **Q43:** Show lines with a salary greater than 70000 (you may need to refine this after `grep` using `awk`).
-
+grep -E "[0-9]{5,}" employees.csv | awk -F ',' '$4 > 70000'
 **Q44:** Search for employees who joined in the year 2019.
-
+grep 2019 employees.csv
 ### `sed` Questions:
 **Q45:** Replace "HR" with "Human Resources" in the dataset.
 
