@@ -37,7 +37,7 @@ Good luck, and may the curve ever be in your favor.
 
 **Q3: What does the command `ls ../..` do?**
 - a) Lists files in the current directory
-- b) Lists files two directories up from current location<-
+- b) Lists files two directories up from current location <-
 - c) Lists hidden files in parent directory
 - d) Creates a new directory
 
@@ -60,14 +60,14 @@ Good luck, and may the curve ever be in your favor.
 - d) delete  
 
 **Q7: What command is used to remove a file in Linux?**
-- a) rm<- 
+- a) rm <- 
 - b) erase  
 - c) del  
 - d) remove  
 
 **Q8: Which command in Linux is used to copy files?**
 - a) mv  
-- b) cp<-  
+- b) cp <-  
 - c) cat  
 - d) ln  
 
@@ -108,7 +108,7 @@ Host server1
 
 **Q14: In the above SSH config, what is the username on the remote system?**
 - a) server1 
-- b) admin<-
+- b) admin <-
 - c) 192.168.1.100
 - d) server_key
 
@@ -165,7 +165,7 @@ if [[ -e $filename ]]; then
     cat $filename
 fi
 ```
-- d) Both a and c are correct<-
+- d) Both a and c are correct <-
 
 **Q22: You have a script that uses getopts with options "-h" for help, "-f" for filename, and "-n" for number. Write a command that would call this script to set filename to "data.txt" and number to "42":**
 
@@ -177,23 +177,23 @@ fi
 
 **Q23: What does the `chmod` command do in Linux?**
 - a) Changes the ownership of a file  
-- >b) Changes the permissions of a file  
+- b) Changes the permissions of a file  <-
 - c) Moves a file to a new directory  
 - d) Renames a file  
 
 **Q24: What permissions does `chmod 755 script.sh` set?**
-- >a) user: rwx, group: r-x, other: r-x
+- a) user: rwx, group: r-x, other: r-x <-
 - b) user: rw-, group: r--, other: r--
 - c) user: r-x, group: rwx, other: r-x
 - d) user: rwx, group: rwx, other: rwx
 
 **Q25: A file has permissions `-rw-r--r--` and is owned by user "john" in group "staff". Can user "mary" (who is in group "staff") edit this file?**
 - a) Yes
-- b) No<-
+- b) No <-
 
 **Q26: A script has permissions `-rw-r--r--`. Can you execute it with `./script.sh`?**
 - a) Yes
-- b) No<-
+- b) No <-
 
 ---
 
@@ -256,12 +256,12 @@ Carol Davis green salad
 
 **Q33: What does the `git commit -m "message"` command do?**
 - a) Stages changes for commit  
-- b) Commits staged changes with a descriptive message<-  
+- b) Commits staged changes with a descriptive message <-  
 - c) Pushes committed changes to a remote repository  
 - d) Creates a new branch 
 
 **Q34: What command is used to check the status of a Git repository?**
-- a) git status<-  
+- a) git status <-  
 - b) git check  
 - c) git info  
 - d) git logs  
@@ -280,13 +280,13 @@ Carol Davis green salad
 
 **Q37: What does the `git clone` command do?**
 - a) Creates a new branch  
-- b) Downloads a remote repository<-
+- b) Downloads a remote repository <-
 - c) Commits changes to the repository  
 - d) Adds files to the repository  
 
 **Q38: You're trying to push changes to GitHub but get an error saying "Updates were rejected because the remote contains work that you do not have locally." What should you do first?**
 - a) `git push --force`
-- b) `git pull`<-
+- b) `git pull` <-
 - c) `git reset --hard`
 - d) `git commit -m "fix"`
 
@@ -296,7 +296,7 @@ Changes not staged for commit:
   modified: main.java
 ```
 **What commands do you need to commit and push this change?**
-- a) `git add main.java; git commit -m "update"; git push`<-
+- a) `git add main.java; git commit -m "update"; git push` <-
 - b) `git commit main.java; git push`
 - c) `git add .; git push`
 - d) `git commit -a; git push`
@@ -309,31 +309,32 @@ Changes not staged for commit:
 
 ### `grep` Questions:
 **Q40:** Find all employees in the "Engineering" department.
-grep Engineering employees.csv 
+-> grep Engineering employees.csv 
 **Q41:** Display lines containing "HR" employees.
-grep HR employees.csv
+-> grep HR employees.csv
 **Q42:** Find employees whose name contains "John".
-grep John employees.csv
+-> grep John employees.csv
 **Q43:** Show lines with a salary greater than 70000 (you may need to refine this after `grep` using `awk`).
-grep -E "[0-9]{5,}" employees.csv | awk -F ',' '$4 > 70000'
+-> grep -E "[0-9]{5,}" employees.csv | awk -F ',' '$4 > 70000'
 **Q44:** Search for employees who joined in the year 2019.
-grep 2019 employees.csv
+-> grep 2019 employees.csv
 ### `sed` Questions:
 **Q45:** Replace "HR" with "Human Resources" in the dataset.
+ -> sed 's/HR/Human Resources/g' employees.csv
 
 **Q46:** Remove the "Marketing" department from the dataset.
-
+-> sed 's/Marketing//g' employees.csv
 **Q47:** Add a "USD" suffix to all salary values.
-
+-> sed 's/$/USD/' employees.csv
 **Q48:** Swap the "Name" and "Department" columns (assume a simple text transformation).
-
+-> sed 's/^\([^,]*\),\([^,]*\)/\2,\1/' employees.csv
 **Q49:** Remove the header row from the file.
-
+-> sed 's/$//g' employees.csv
 ### `awk` Questions:
 **Q50:** Print only the names of the employees.
-
+-> $ awk -F ',' '{ print $1 }' employees.csv
 **Q51:** Show the name and salary of employees from the "Engineering" department.
-
+-> $awk '{print $Engineering }' employees.csv
 **Q52:** Calculate and print the average salary of all employees.
 
 **Q53:** Find the highest salary in the dataset.
