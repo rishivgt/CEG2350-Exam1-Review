@@ -5,9 +5,9 @@
 **Resources Available:**
 - Your terminal and AWS instance
 - Notes you've taken so far
-- Regex links that are provided
+-  links that are provided
 - [Data Camp Cheat Sheet](https://www.datacamp.com/cheat-sheet/regular-expresso)
-and [Regex 101](https://regex101.com)
+and [ Regex 101](https://regex101.com)
 - Lab work in your course repository
 
 **Important Note:**
@@ -237,14 +237,14 @@ Carol Davis green salad
 - c) `grep -v "(cat|dog)" file.txt`
 - d) `grep "(cat|dog)" > file.txt`
 
-**Q31: Given the regex pattern: `^[Tt]est\s\$[0-9]{2,3}$`**
+**Q31: Given the  pattern: `^[Tt]est\s\$[0-9]{2,3}$`**
 **Which string will match this pattern?**
 - a) `Test $25`<-
 - b) `test $5`
 - c) `Testing $100`
 - d) `test$25`
 
-**Q32: Which regex matches files ending in .txt only?**
+**Q32: Which  matches files ending in .txt only?**
 - a) `.txt`
 - b) `\.txt`
 - c) `\.txt$`<-
@@ -309,37 +309,37 @@ Changes not staged for commit:
 
 ### `grep` Questions:
 **Q40:** Find all employees in the "Engineering" department.
--> grep Engineering employees.csv 
+-> grep "Engineering" employees.csv 
 **Q41:** Display lines containing "HR" employees.
--> grep HR employees.csv
+-> grep "HR" employees.csv
 **Q42:** Find employees whose name contains "John".
--> grep John employees.csv
+-> grep "John" employees.csv
 **Q43:** Show lines with a salary greater than 70000 (you may need to refine this after `grep` using `awk`).
--> grep -E "[0-9]{5,}" employees.csv | awk -F ',' '$4 > 70000'
+-> grep -E "[0-9]{6,}" employees.csv | awk -F ',' '$4 > 70000'
 **Q44:** Search for employees who joined in the year 2019.
--> grep 2019 employees.csv
+-> grep "2019" employees.csv
 ### `sed` Questions:
 **Q45:** Replace "HR" with "Human Resources" in the dataset.
  -> sed 's/HR/Human Resources/g' employees.csv
 
 **Q46:** Remove the "Marketing" department from the dataset.
--> sed 's/Marketing//g' employees.csv
+-> sed '/Marketing/d' employees.csv
 **Q47:** Add a "USD" suffix to all salary values.
--> sed 's/$/USD/' employees.csv
+-> sed 's/\([0-9]\+\)$/\1 USD/g' employees.csv
 **Q48:** Swap the "Name" and "Department" columns (assume a simple text transformation).
--> sed 's/^\([^,]*\),\([^,]*\)/\2,\1/' employees.csv
+-> sed -r 's/^([^,]+),([^,]+),/\2,\1/' employees.csv
 **Q49:** Remove the header row from the file.
--> sed 's/$//g' employees.csv
+-> sed '1d' employees.csv
 ### `awk` Questions:
 **Q50:** Print only the names of the employees.
 -> $ awk -F ',' '{ print $1 }' employees.csv
 **Q51:** Show the name and salary of employees from the "Engineering" department.
--> $awk '{print $Engineering }' employees.csv
+-> $awk -F ','  '$2 == "Engineering" { print $1, $3 }' employees.csv
 **Q52:** Calculate and print the average salary of all employees.
-
+-> $awk -F ',' 'NR >1 {sum +=$3; count++} END {print sum/count}' employees.csv
 **Q53:** Find the highest salary in the dataset.
-
+-> $awk -F ',' 'NR>1 { if($3>max) max = $3 } END {print max}' employees.csv
 **Q54:** Print the names of employees who joined after 2020.
-
+-> $awk -F ',' '$4 > 2020 {print $1}' employees.csv
 ---
 
